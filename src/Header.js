@@ -8,8 +8,11 @@ function Header() {
     return (
         <div className='header'>
             {/* logo on the left -> img */}
+            <Link to="/">
+                <img className="header__logo" src="https://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG" />
+            </Link>
 
-            <img className="header__logo" src="https://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG" />
+
 
 
 
@@ -31,11 +34,12 @@ function Header() {
                     <span className='header__optionLineTwo'>Prime</span>                 
                 </div>
 
-                <div className="header__optionBasket">
-                    <ShoppingBasketIcon />
-                    <span className="header__optionLineTwo header__basketCount">0</span>
-
-                </div>
+                <Link to="/checkout">
+                    <div className="header__optionBasket">
+                        <ShoppingBasketIcon />
+                        <span className="header__optionLineTwo header__basketCount">0</span>
+                    </div>
+                </Link>
 
 
             </div>
